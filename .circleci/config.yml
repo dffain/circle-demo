@@ -6,9 +6,6 @@ jobs:
     docker:
     # Primary container image where all steps run
      - image: cimg/node:18.18.2
-    branches:
-      only:
-        - master
     steps: 
       - add_ssh_keys:
           fingerprints:
