@@ -5,7 +5,7 @@ jobs:
   build:
     docker:
     # Primary container image where all steps run
-     - image: cimg/node:18
+     - image: cimg/node:18.18.2
     steps: 
       - run: echo "A first circle"
       - run: npm -v
