@@ -9,8 +9,7 @@ remote=$(git config remote.origin.url)
 echo 'remote is：' $remote
 
 # 新建一个发布的目录
-mkdir /home/gh-pages-branch
-chomd +777 /home/gh-pages-branch
+mkdir gh-pages-branch
 cd gh-pages-branch
 # 创建的一个新的仓库
 # 设置发布的用户名与邮箱
@@ -48,7 +47,7 @@ git commit --allow-empty -m "Deploy to GitHub pages [ci skip]"
 git push --force --quiet origin gh-pages
 # 资源回收，删除临时分支与目录
 cd ..
-rm -rf /home/gh-pages-branch
+rm -rf gh-pages-branch
 
 echo "Finished Deployment!"
 
