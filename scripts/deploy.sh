@@ -9,7 +9,7 @@ remote=$(git config remote.origin.url)
 echo 'remote is：' $remote
 
 # 新建一个发布的目录
-mkdir /home/circle/circle-demo/gh-pages-branch
+mkdir -p /home/circle/circle-demo/gh-pages-branch
 cd /home/circle/circle-demo/gh-pages-branch
 # 创建的一个新的仓库
 # 设置发布的用户名与邮箱
