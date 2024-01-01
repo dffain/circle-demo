@@ -10,7 +10,7 @@ echo 'remote is：' $remote
 
 # 新建一个发布的目录
 mkdir -p /home/circle/circle-demo/gh-pages-branch
-chmod +777 /home/circle/circle-demo
+chmod +777 /home/circle
 cd /home/circle/circle-demo/gh-pages-branch
 # 创建的一个新的仓库
 # 设置发布的用户名与邮箱
@@ -48,7 +48,7 @@ git commit --allow-empty -m "Deploy to GitHub pages [ci skip]"
 git push --force --quiet origin gh-pages
 # 资源回收，删除临时分支与目录
 cd ..
-rm -rf /home/circle/circle-demo/gh-pages-branch
+rm -rf /home/circle
 
 echo "Finished Deployment!"
 
