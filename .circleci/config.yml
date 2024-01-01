@@ -11,8 +11,6 @@ jobs:
           fingerprints:
             - "71:93:50:d1:4d:1b:18:1f:1c:1c:81:5d:f0:46:66:8a"
       - checkout 
-      - run: echo "A first circle"
-      - run: npm -v
       - run:
           name: Install
           command: yarn install
