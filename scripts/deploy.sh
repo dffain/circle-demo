@@ -10,7 +10,7 @@ echo 'remote is：' $remote
 
 # 新建一个发布的目录
 mkdir -p /home/circle/circle-demo/gh-pages-branch
-chmod +777 /home/circle
+chmod +777 /home
 cd /home/circle/circle-demo/gh-pages-branch
 # 创建的一个新的仓库
 # 设置发布的用户名与邮箱
