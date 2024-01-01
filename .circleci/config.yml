@@ -31,4 +31,4 @@ jobs:
           command: chmod +777 scripts/deploy.sh
       - run:
           name: Run Deploy to GitHub pages
-          command: sh ./scripts/deploy.sh
+          command: ./scripts/deploy.sh
